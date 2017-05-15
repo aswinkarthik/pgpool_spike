@@ -18,4 +18,11 @@ Vagrant.configure(2) do |config|
     node.vm.network "private_network", ip: "10.0.0.101"
   end
 
+  config.vm.define "pgpool1" do |node|
+    node.vm.network "private_network", ip: "10.0.0.102"
+  end
+
+  config.vm.define "pgpool2" do |node|
+    node.vm.network "private_network", ip: "10.0.0.103"
+  end
 end

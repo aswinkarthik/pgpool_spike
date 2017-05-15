@@ -1,0 +1,4 @@
+standby_mode          = 'on'
+primary_conninfo      = 'host=10.0.0.100 port=5432 user=replication password=replication'
+trigger_file = '/var/lib/pgsql/failover/trigger'
+restore_command = 'cp /var/lib/pgsql/9.5/wal_archives/%f "%p"'
